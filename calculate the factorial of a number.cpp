@@ -22,5 +22,6 @@ int main()
     int fibonacciResult2=fibo(number*number);
     cout<< "Fibonacci  of "<<number<<" is: "<< fibonacciResult<<endl;
     cout<< "Fibonacci  of "<<number*number<<" is: "<< fibonacciResult2<<endl;
+    cout<< "Fibonacci  of "<<number*number<<" is: "<< fibonacciResult2*fibonacciResult2<<endl;    
     return 0;
 }
