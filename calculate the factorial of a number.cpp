@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-#define MAX_SIZE 10000000000000005
-
-
 int fibo(int number);
 int factorial(int n)
 {
@@ -17,24 +13,6 @@ int fibo(int number) {
     }
     return fibo(number - 1) + fibo(number - 2);
 }
-
- 
-void SieveOfEratosthenes(vector<int>& primes)
-{
-    bool IsPrime[MAX_SIZE];
-    memset(IsPrime, true, sizeof(IsPrime));
- 
-    for (int p = 2; p * p < MAX_SIZE; p++) {
-        if (IsPrime[p] == true) {
-            for (int i = p * p; i < MAX_SIZE; i += p)
-                IsPrime[i] = false;
-        }
-    }
-    for (int p = 2; p < MAX_SIZE; p++)
-        if (IsPrime[p])
-            primes.push_back(p);
-}
-
 int main()
 {
     int number = 5;
@@ -57,10 +35,5 @@ int main()
         ans*=i;
     }
     cout<<"Iterative factorial Answer : "<<ans<<endl;
-
-    vector<int> primes;
-    SieveOfEratosthenes(primes);
-    cout << "5th prime number is " << primes[4] << endl;
-
     return 0;
 }
