@@ -21,15 +21,14 @@ int main()
     int fibonacciResult=fibo(number);
     int fibonacciResult2=fibo(number*number);
     cout<< "Fibonacci  of "<<number<<" is: "<< fibonacciResult<<endl;
-<<<<<<< HEAD
+
 
     cout<< "Fibonacci  of "<<number*number<<" is: "<< fibonacciResult2<<endl;
     cout<< "Fibonacci  of "<<number*number<<" is: "<< fibonacciResult2*fibonacciResult2<<endl;    
-=======
+
     int fibonacciResult2=fibo(number);
     cout<< "Fibonacci  of "<<number<<" is: "<< fibonacciResult2<<endl;
     cout<< "Fibonacci  of "<<number*number<<" is: "<< fibonacciResult2*fibonacciResult2<<endl;
->>>>>>> e82f182 (Updated iterative version of calculate factorial of a number)
     int ans=1;
     for(int i=1;i<=n;i++)
     {
