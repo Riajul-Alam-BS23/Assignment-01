@@ -23,5 +23,11 @@ int main()
     int fibonacciResult2=fibo(number);
     cout<< "Fibonacci  of "<<number<<" is: "<< fibonacciResult2<<endl;
     cout<< "Fibonacci  of "<<number*number<<" is: "<< fibonacciResult2*fibonacciResult2<<endl;
+    int ans=1;
+    for(int i=1;i<=n;i++)
+    {
+        ans*=i;
+    }
+    cout<<"Iterative factorial Answer : "<<ans<<endl;
     return 0;
 }
