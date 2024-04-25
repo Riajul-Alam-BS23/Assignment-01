@@ -20,5 +20,7 @@ int main()
     cout << "Factorial of "<< number << " is: " << result << endl;
     int fibonacciResult=fibo(number);
     cout<< "Fibonacci  of "<<number<<" is: "<< fibonacciResult<<endl;
+    int fibonacciResult2=fibo(number);
+    cout<< "Fibonacci  of "<<number<<" is: "<< fibonacciResult2<<endl;
     return 0;
 }
